@@ -1,18 +1,11 @@
 # Personal Website Template
 
-A clean, modern personal website template built with Flask and Python.
+A clean, modern personal website template built with Flask and Python. Perfect for showcasing your social media links and professional profile.
 
-## Features
-
-- Responsive design
-- Social media links (GitHub, Twitter, LinkedIn, Email)
-- Modern UI with smooth animations
-- Easy to customize
-
-## Setup
+## 🚀 Quick Start
 
 1. Clone the repository
-2. Create a virtual environment:
+2. Create and activate virtual environment:
    ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
@@ -21,25 +14,24 @@ A clean, modern personal website template built with Flask and Python.
    ```bash
    pip install -r requirements.txt
    ```
-4. Update your social links in `app.py`
-5. Add your profile picture to `static/img/profile.jpg`
-6. Run the development server:
+4. Run the development server:
    ```bash
    python app.py
    ```
 
-## Deployment
+## 🛠️ Customization
 
-This application is configured to be deployed on platforms that support Python web applications (like Heroku, DigitalOcean, etc.).
+1. Update your social links in `app.py`
+2. Add your profile picture to `static/img/profile.jpg`
+3. Edit your name and bio in `templates/index.html`
+4. Customize colors in `static/css/style.css`
 
-1. Make sure you have the required dependencies installed
-2. The application uses Gunicorn as the production server
-3. Update your social links in `app.py`
-4. Deploy using your preferred platform
+## 🌐 Deployment
 
-## Customization
+The application is configured for production deployment with Gunicorn. Deploy to any platform that supports Python web applications (Heroku, DigitalOcean, etc.).
 
-- Update the social links in `app.py`
-- Modify the colors in `static/css/style.css`
-- Update the profile picture in `static/img/profile.jpg`
-- Edit the bio and name in `templates/index.html`
+## 📦 Dependencies
+
+- Flask 3.0.2
+- Gunicorn 21.2.0
+- python-dotenv 1.0.1
