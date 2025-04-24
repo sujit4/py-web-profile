@@ -1,8 +1,9 @@
 :root {
-    --primary-color: #2563eb;
-    --secondary-color: #1e40af;
-    --text-color: #1f2937;
-    --background-color: #f3f4f6;
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --text-color: #2c3e50;
+    --background-color: #f8f9fa;
+    --accent-color: #3498db;
 }
 
 * {
@@ -12,41 +13,45 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 500px;
+    width: 90%;
+    margin: 2rem auto;
     padding: 2rem;
     text-align: center;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .profile {
-    margin-bottom: 2rem;
-}
-
-.profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 1rem;
-    border: 4px solid var(--primary-color);
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
 }
 
 h1 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-    color: var(--text-color);
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    letter-spacing: -0.5px;
 }
 
 .bio {
-    color: #6b7280;
-    margin-bottom: 2rem;
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 0;
 }
 
 .links {
@@ -59,22 +64,22 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
-    padding: 1rem;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
     background-color: white;
     color: var(--text-color);
     text-decoration: none;
-    border-radius: 0.5rem;
+    border-radius: 8px;
     font-weight: 500;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eee;
 }
 
 .link-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
     color: white;
+    border-color: var(--accent-color);
 }
 
 .link-button i {
@@ -83,15 +88,15 @@ h1 {
 
 @media (max-width: 640px) {
     .container {
-        padding: 1rem;
-    }
-    
-    .profile-img {
-        width: 120px;
-        height: 120px;
+        padding: 1.5rem;
+        margin: 1rem;
     }
     
     h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
+    }
+    
+    .bio {
+        font-size: 1rem;
     }
 } 
