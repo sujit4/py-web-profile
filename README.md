@@ -1,37 +1,35 @@
-# Personal Website Template
+# Py Web Profile
 
-A clean, modern personal website template built with Flask and Python. Perfect for showcasing your social media links and professional profile.
+A simple Flask-based web application for user profile management.
 
-## 🚀 Quick Start
+## Features
 
-1. Clone the repository
-2. Create and activate virtual environment:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Run the development server:
-   ```bash
-   python app.py
-   ```
+- User authentication (login/register)
+- Profile management
+- Secure password handling
 
-## 🛠️ Customization
+## Setup
 
-1. Update your social links in `app.py`
-2. Add your profile picture to `static/img/profile.jpg`
-3. Edit your name and bio in `templates/index.html`
-4. Customize colors in `static/css/style.css`
+1. Create a virtual environment:
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 
-## 🌐 Deployment
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-The application is configured for production deployment with Gunicorn. Deploy to any platform that supports Python web applications (Heroku, DigitalOcean, etc.).
+3. Run the application:
+```bash
+python app.py
+```
 
-## 📦 Dependencies
+## Development
 
-- Flask 3.0.2
-- Gunicorn 21.2.0
-- python-dotenv 1.0.1
+This project uses:
+- Flask for the web framework
+- SQLAlchemy for database management
+- Flask-Login for authentication
+- SQLite for data storage
